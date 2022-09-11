@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #FFD845;
+}
+
+.Pokemon-item {
+  background-color: #fff;
+}
+
+.flex-btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+}
+.pokemon-title
+{
+   display: flex;
+   justify-content: center;
+   align-items:center;
+}
+
+
+button
+{
+   margin: 20px 20px;
+   appearance: none;
+}

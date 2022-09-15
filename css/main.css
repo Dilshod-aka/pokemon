@@ -12,7 +12,7 @@ body {
 .flex-btn
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: 20px 20px;
 }
@@ -22,10 +22,80 @@ body {
    justify-content: center;
    align-items:center;
 }
+.type-select
+{
+    width: 100px;
 
+    border-color: #fff;
+    
+}
 
 button
 {
    margin: 20px 20px;
    appearance: none;
+}
+
+
+@media only screen and (max-width: 818px) {
+  
+    .pokemon
+    {
+       width: 100%;
+       flex-direction: column;    
+    }
+    .logo
+    {
+       width: 300px;
+    }
+    .flex-btn
+    {
+      display: flex;
+      flex-direction: column;
+    }
+    .card
+    {
+       margin: 10px 20px;
+    }
+    .form-control
+    { 
+       width: 100px;
+    }
+    
+    
+
+}
+@media only screen and (max-width: 400px) {
+  .card {
+    transform: scale(0.8);
+    margin: -30px;
+  }
+  .card:hover {
+    transform: scale(0.81);
+  }
+  .card .input-wrapper {
+    justify-content: center;
+    width: 100%;
+  }
+  .liked {
+    top: 0px;
+    right: 20px;
+  }
+  .card-wrapper {
+    margin-top: 20px;
+  }
+  .right .card {
+    transform: scale(0.6);
+    margin-top: -110px;
+  }
+  .right {
+    padding-top: 100px;
+  }
+}
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+.bi-chevron-right {
+  z-index: 99;
 }

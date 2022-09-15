@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pokemon</title>
   <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
-  
+
   <div class="pokemon">
     <div class="container">
       <div class="pokemon-inner">
-       
-        <div class="pokemon-title cursor-pointer"> <img src="img/logo.svg">
-        <img src="img/ser/Icon/Outline/heart.svg" class="hert"></div>
-       
+
+        <div class="pokemon-title cursor-pointer"> <img src="img/logo.svg" class="logo">
+          <img src="img/ser/Icon/Outline/heart.svg" class="hert">
+        </div>
+
         <div class="flex-btn">
-          <button type="button" class="btn btn-light">Gross</button>
-          <button type="button" class="btn btn-light">Search <i class="fa-solid fa-magnifying-glass"></i></button>
-          <button type="button" class="btn btn-light">Aa-Zz</button>
-          <button type="button" class="btn btn-light">Button</button>
+          <div class="card">
+            <select class="type-select"></select>
+          </div>
+          <div class="card">
+            <input id="search" type="text" placeholder="Search" class="form-control">
+          </div>
+          <select class="type-select">
+            <option value="0">Auto</option>
+            <option value="1">Aa-Zz</option>
+            <option  value="2">Zz-Aa</option>
+          </select>
+          <button type="button" class="btn btn-info">Button</button>
         </div>
 
         <ul class="result-list d-flex flex-wrap">
         </ul>
-        
+
       </div>
     </div>
   </div>
@@ -37,4 +50,5 @@
   <script src="./js/plugin.js"></script>
   <script src="./js/script.js"></script>
 </body>
+
 </html>
